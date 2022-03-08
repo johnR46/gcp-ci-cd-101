@@ -23,7 +23,7 @@ steps:
     id: Push
     args:
       - "push"
-      - "gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-$SHORT_SHA"
+      - "gcr.io/$PROJECT_ID/my-fast-api:$SHORT_SHA"
 
   # generates the new manifest
   #the entrypoint in a build step to specify an entrypoint if you don't want to use the default entrypoint of the builder.
