@@ -8,7 +8,7 @@ router = APIRouter(
     responses={404: {"message": "Not found"}}
 )
 
-users_x = [
+users_obj = [
     {'id': 1, 'name': 'john'},
     {'id': 2, 'name': 'jame'},
     {'id': 3, 'name': 'jj'}
@@ -17,10 +17,10 @@ users_x = [
 
 @router.get("/")
 def users():
-    return users_x
+    return users_obj
 
 
 @router.get("/users/{user_id}")
 def read_item(user_id: int):
-    result = [u for u in users_x if u.get('id') == user_id]
+    result = [u for u in users_obj if u.get('id') == user_id]
     return result
