@@ -43,5 +43,5 @@ steps:
     id: Deploy
     args: ["apply", "-f", "deployment.yaml"]
     env:
-      - "CLOUDSDK_COMPUTE_ZONE=<gke_cluster_zone/region>"
-      - "CLOUDSDK_CONTAINER_CLUSTER=<gke_cluster_name>"
+      - "CLOUDSDK_COMPUTE_ZONE=asia-southeast1-b/region"
+      - "CLOUDSDK_CONTAINER_CLUSTER=asia-southeast1-b"
