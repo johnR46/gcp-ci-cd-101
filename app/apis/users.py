@@ -24,3 +24,8 @@ def users():
 def read_item(user_id: int):
     result = [u for u in users_obj if u.get('id') == user_id]
     return result
+
+
+@router.get("/abc")
+def read_users():
+    return  {"message": "abc"}
